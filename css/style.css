@@ -1,0 +1,146 @@
+html,body,ul{
+	margin: 0;
+	padding: 0;
+}
+ul,li,a{
+	text-decoration: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.header{
+	height: 50px;
+	background: #181818;
+	position: relative;
+}
+.header img{
+	height: 50px;
+	background: #181818;
+	margin-left: 1%;
+	float: left;
+}
+.header .header-right{
+	right: 31px;
+	height:38px;
+	position: absolute;
+	width: 140px;	
+	border-left: 1px solid #101010;
+	text-align: center;
+	padding-top: 12.5px;
+	cursor:pointer
+}
+.header .header-right img{
+	height: 25px;
+	border-radius: 50%;
+}
+.header .header-right span{
+	color: #fff;
+	margin-left: 8px;
+	font-size: 12px;
+}
+.header .header-right .jiantou{
+	color: #fff;
+	font-size: 8px;
+	margin-left: 10px;
+}
+.header-right2{
+	width: 30px;
+	right: 0;
+	line-height: 50px;
+	position: absolute;
+	border-left: 1px solid #101010;
+	text-align: center;
+	cursor:pointer
+}
+.header .header-right2 .guanbi{
+	/*font-size: 12px;*/
+	color: #fff;
+}
+.content{
+	width: 100%;
+	height: 100%;
+}
+/***************************left********************************/
+.content .left{
+	border-top: 1px solid #101010;
+	width: 225px;
+	height: 100%;
+	float: left;
+	background: #181818;
+	position: relative;
+}
+.content .left .left-admin{
+	border-bottom: 1px solid #101010;
+	padding-bottom: 15px;
+	cursor:pointer;
+	display: block;
+	text-align: center;
+}
+.content .left .left-admin img{
+	width: 65px;
+	border-radius: 50%;
+	margin-top: 50px;	
+}
+.content .left .left-admin p{
+	color: #fff;
+	font-size: 12px;
+}
+
+
+.content .left .left-li{
+	border-bottom: 1px solid #101010;
+	padding-top:20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	cursor:pointer;
+	display: block;
+}
+.content .left .left-li i{
+	color: #fff;
+}
+.content .left .left-li span{
+	color: #fff;
+	margin-left: 15px;
+	text-align: center;
+}
+.content .left .left-li:hover{
+	background: #151515;
+}
+.content .left  .nav-button{
+	width: 225px;
+	height: 40px;
+	background: red;
+	bottom: 0;
+	position: fixed;
+	z-index: 5;
+}
+/*********************main-container*********************************/
+.content .main-container{
+	margin-left: 225px;
+	height: 100%;
+	background: #FAFAFA;
+}
+
+/***************************************************弹窗、**************************************************************/
+.upload-photos{
+	position:absolute;
+	left:2%; 
+	top:5%;
+	z-index: 51;
+	width: 96%;
+	height: 90%;
+	bottom: 5%;
+}
+.upload-photos-pop{
+	
+	width: 100%;
+	height: 100%;
+	left: 5%;
+	top:5%; 
+	background: #fff;
+	
+}
+
+/***************************************************弹窗、**************************************************************/

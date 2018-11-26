@@ -1,0 +1,131 @@
+.content-about .content-about-li{
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 25px;
+	position: relative;
+}
+.content-about .content-about-li img{
+	width: 230px;
+	height: 330px;
+	background: #fff;
+}
+.content-about .content-about-li-top{
+	top:0;
+    height: 330px;
+    position: absolute;
+    width: 230px;
+}
+.content-about .content-about-li-top .content-about-li-top-a{
+	width: 100%;
+	height: 270px;
+	padding-left: 10px;
+	padding-top: 80%;
+}
+.content-about .content-about-li-top .content-about-li-top-a a{
+	border: 1px solid #fff;
+	border-radius: 50%;
+	display: block;
+	opacity: 0;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-left: 25px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+}
+.content-about .content-about-li-top .content-about-li-top-a .icon1{
+	font-size: 18px;
+	line-height: 30px;
+}
+.content-about .content-about-li-top .content-about-li-top-a .icon2{
+	margin-top: -15px;
+	margin-left: 25px;
+	margin-right: 0px;
+	font-size: 24px;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+}
+.content-about .content-about-li-top .bottun-title{
+	width: 100%;
+	padding-left: 15px;
+	height: 60px;
+	float: left;
+	padding-top: 5px;
+	color: #787878;
+}
+.content-about .content-about-li-top .bottun-title .bottun-title-p1{
+	font-size: 20px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+.content-about .content-about-li-top .bottun-title .bottun-title-p2{
+	font-size: 12px;
+
+}
+.content-about .content-about-li-top:hover{
+	background: #000;
+	opacity: 0.5;
+}
+.content-about .content-about-li-top:hover .content-about-li-top-a a{
+	opacity: 1;
+}
+.content-about .content-about-li-top .content-about-li-top-a a:hover{
+	background: #fff;
+	color: #454545;
+}
+.content-about .content-about-li-top:hover .bottun-title{
+	color: #fff;
+}
+.content-about .content-about-li-top .bottun-title .bottun-title-p1:hover{
+	text-decoration: underline;
+}
+/***************************************************弹窗、**************************************************************/
+/*.point{
+	position:absolute;
+	left:5%; 
+	top:5%;
+	z-index: 50;
+}
+.pop{
+	width:1000px;
+	height:500px; 
+	position:absolute;
+	left:-250px;
+	top:-250px; 
+	border:2px solid red;
+	background: blue;
+	
+}*/
+
+/***************************************************弹窗、**************************************************************/
+/*****************************************************button*************************************************/
+.content-button{
+	width: 100%;
+	float: left;
+	text-align: center;
+	bottom: 50px;
+}
+.content-button .content-button-fenge{
+	height: 1px;
+	width: 100%;
+	background: #E8E8E8;
+	float: left;
+}
+.content-button span{
+	text-align: center;
+	font-size: 12px;
+	color: #99B3D4;
+}	
+.content-footer{
+	height: 80px;
+	background: #fff;
+	width: 100%;
+	float: left;
+}
+
+
+

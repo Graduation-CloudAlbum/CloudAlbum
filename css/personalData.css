@@ -1,0 +1,87 @@
+/**************************personal***********************************/
+.content-about .content-about-personal{
+	border: 1px solid #EEEEEE; 
+	width: 266px;
+	height: 338px;
+	padding-top: 40px;
+	text-align: center;
+	background: #fff;
+	float: left;
+}
+.content-about .content-about-personal img{
+	width:150px;
+	border-radius: 50%;
+}
+.content-about .content-about-personal p{
+	color: #666666;
+	font-size: 24px;	
+}
+.content-about .content-about-personal .content-about-personal-admin{
+	margin-top: 20px;
+}
+.content-about .content-about-personal .content-about-personal-num{
+	width: 88px;
+	height: 65px;	
+	background: #FAFAFA;
+	border: 1px solid #EEE;
+	float: left;
+	margin-top: 28px;
+	overflow: hidden;
+}
+.content-about .content-about-personal .content-about-personal-num .content-about-personal-num-p1{
+	font-size: 26px;
+	padding-top: 7px;
+	color: #999999;
+}
+.content-about .content-about-personal .content-about-personal-num .content-about-personal-num-p2{
+	font-size: 12px;
+	color: #D9D0CC;
+}
+
+/************************content-about-info***********************************/
+.content-about .content-about-info{
+	width:  449px;
+	height: 338px;
+	border:1px solid #EEE;
+	background: #fff;
+	margin-left: 270px;
+	position: relative;
+}
+.content-about .content-about-info .content-about-info-no{
+	text-align: center;
+	line-height: 50px;
+	padding:50px;
+}
+.content-about .content-about-info .content-about-info-no i{
+	font-size: 24px;
+	color: #ccc;
+}
+.content-about .content-about-info .content-about-info-no span{
+	color: #666;
+	font-size: 12px;
+}
+.content-about .content-about-info .content-about-info-menu{
+	height: 66px;
+	border: 1px solid #EEE;
+	text-align: center;
+	padding-left: 26px;
+	padding-right: 26px;
+	overflow: hidden;
+	position: absolute;
+	bottom: -1px;
+}
+.content-about .content-about-info .content-about-info-menu li{
+	width: 79px;
+	float: left;
+	line-height: 65px;
+	text-align: center;
+	height: 65px;
+	border-top: 2px solid #fff;
+	color: #999;
+	margin-left: 26px;
+	margin-right: 26px;
+	cursor: pointer;
+}
+.content-about .content-about-info .content-about-info-menu li:hover{
+	border-top: 2px solid #EBA597;
+}
