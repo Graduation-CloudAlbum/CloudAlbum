@@ -1,14 +1,20 @@
-html,body,ul{
+html,body,ul,p{
 	margin: 0;
 	padding: 0;
 }
 ul,li,a{
 	text-decoration: none;
+	list-style: none;
 }
 html,body{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
+	z-index: 5;
+}
+.wrapper{
+	width: 100%;
+	height: 100%;
 }
 .header{
 	height: 50px;
@@ -86,6 +92,7 @@ html,body{
 .content .left .left-admin p{
 	color: #fff;
 	font-size: 12px;
+	margin-top: 12px;
 }
 
 
@@ -93,7 +100,7 @@ html,body{
 	border-bottom: 1px solid #101010;
 	padding-top:20px;
 	padding-bottom: 20px;
-	padding-left: 50px;
+	padding-left: 60px;
 	cursor:pointer;
 	display: block;
 }
@@ -104,6 +111,7 @@ html,body{
 	color: #fff;
 	margin-left: 15px;
 	text-align: center;
+	font-size: 16px;
 }
 .content .left .left-li:hover{
 	background: #151515;
@@ -120,27 +128,93 @@ html,body{
 .content .main-container{
 	margin-left: 225px;
 	height: 100%;
-	background: #FAFAFA;
-}
-
-/***************************************************弹窗、**************************************************************/
-.upload-photos{
-	position:absolute;
-	left:2%; 
-	top:5%;
-	z-index: 51;
-	width: 96%;
-	height: 90%;
-	bottom: 5%;
-}
-.upload-photos-pop{
-	
-	width: 100%;
-	height: 100%;
-	left: 5%;
-	top:5%; 
 	background: #fff;
-	
+}
+.content-header{
+	width: 100%;
+	height: 60px;
+	border-bottom: 1px solid #EEEEEE;
+	padding-top: 15px;
+	padding-left: 30px;
+	background: #fff;
+}
+.content-header i,span{
+	color: #D84C31;
+	font-size: 24px;
+}
+.content-header span{
+	margin-left: 10px;
+	cursor: pointer;
+}
+.content-header span:hover{
+	border-bottom: 2px solid #D84C31;
+}
+.content-menu{
+	width: 100%;
+	height: 39px;
+	border-bottom:1px solid #EEEEEE;
+	background: #fff;
+}
+.content-menu  .content-menu-li{
+	float: left;
+	margin-left: 30px;
+	height: 100%;
+	color: #9999A6;
+	cursor: pointer;
+}
+.content-menu  .content-menu-li a{
+	margin-top: 12px;
+	display: block;
+}
+.content-menu  .content-menu-li:hover{
+	color: #000;
+	border-bottom: 2px solid #D84C31;
+}
+.content-about{
+	margin-left: 30px;
+	margin-top: 30px;
+	width: 100%;
+}
+#main{
+	height: 100%;background: #FAFAFA;
 }
 
-/***************************************************弹窗、**************************************************************/
+
+/***************************************************遮罩层、**************************************************************/
+#popLayer{
+	display: none;
+}
+.popLayer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    z-index:40;
+    background:#000;
+    opacity:0.9;
+}
+#popLayer2{
+	display: none;
+}
+.popLayer2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    z-index:60;
+    background:#000;
+    opacity:0.7;
+}
+
+
+
+
+
+
+
+
+
+
+

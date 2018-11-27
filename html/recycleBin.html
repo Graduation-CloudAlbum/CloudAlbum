@@ -1,23 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
-	<link rel="stylesheet"  type="text/css" href="../css/iconfont.css"/>
-	<link rel="stylesheet" type="text/css" href="../css/public-style.css"/>
-	<link rel="stylesheet" type="text/css" href="../css/personalData.css"/>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css" />
 	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/iconfont.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/personalData.css"/>
 </head>
 <body>
-	<div class="content-header">
-		<i class="iconfont icon-huishouzhan1"></i> <span>回收站</span>
-	</div>
-	<ul class="content-menu">
-		
-		<li class="content-menu-li"><a>清空回收站</a></li>
-		<li class="content-menu-li"><a>还原所有项目</a></li>
-	</ul>
-	<div class="content-about">
+	<div class="wrapper">
+		<div class="header">
+			<img src="../img/logo.png">
+			<div class="header-right"><img src="../img/default-c.png"><span id="aa">1732859702</span><i class="iconfont icon-iconfontjiantou jiantou"></i></div>
+			<div class="header-right2"><i class="iconfont icon-guanbi1 guanbi"></i></div>
+		</div>
+
+		<div class="content">
+			<div class="left">	
+				<a id="navMenu2" class="left-admin" href="../html/personalData.html"><img src="../img/default-c.png"><p>1732859702</p></a>	
+				<a id="navMenu1" class="left-li" href="../html/myAlbum.html"><i class="iconfont icon-xiangce"></i><span>我的相册</span></a>
+				<a id="navMenu3" class="left-li" href="../html/myFriend.html"><i class="iconfont icon-weibiaoti--"></i><span>我的好友</span></a>
+				<a id="navMenu4" class="left-li" href="../html/recycleBin.html"><i class="iconfont icon-huishouzhan1"></i><span>回收站</span></a>
+				<div class="nav-button"></div>
+			</div>
+			<!-- right -->
+			<div class="main-container">		
+				<div class="content-header">
+					<i class="iconfont icon-huishouzhan1"></i> <span>回收站</span>
+				</div>
+				<ul class="content-menu">
+					<li class="content-menu-li"><a>清空回收站</a></li>
+					<li class="content-menu-li"><a>还原所有项目</a></li>
+				</ul>
+				<div class="content-about">
+					
+				</div>
+
+			</div>
+		</div>
+		<!-- ***************************************************弹窗 ***************************************************-->
+	
+
+
+
+
+
+
+
+
+
+
+		<div id="popLayer" class="popLayer"></div>
+		<div id="popLayer2" class="popLayer2"></div>
+
+
+
+
 	</div>
 
+
+
+
+	<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="../js/index.js"></script>
 </body>
 </html>
