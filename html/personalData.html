@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>personalData</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css" />
 	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="../css/iconfont.css"/>
@@ -30,9 +30,9 @@
 					<i class="iconfont icon-yonghu"></i> <span>个人资料</span>
 				</div>
 				<ul class="content-menu">
-					<li class="content-menu-li"><a>修改资料</a></li>
-					<li class="content-menu-li"><a>更换头像</a></li>
-					<li class="content-menu-li"><a>修改密码</a></li>
+					<li id="ModifyingData" class="content-menu-li"><a>修改资料</a></li>
+					<li id="ChangetheAvatar" class="content-menu-li"><a>更换头像</a></li>
+					<li id="ChangePassword" class="content-menu-li"><a>修改密码</a></li>
 					<li class="content-menu-li"><a>邀请注册</a></li>
 					<li class="content-menu-li"><a>扩充空间</a></li>
 				</ul>
@@ -44,26 +44,49 @@
 						<div class="content-about-personal-num"><p class="content-about-personal-num-p1">0</p><p class="content-about-personal-num-p2">分享辑</p></div>
 					</div>
 					<div class="content-about-info">
-						<div class="content-about-info-no">
+						<div id="content-about-info-no1" class="content-about-info-no1">
 							<i class="iconfont icon-baojiaquotation2"></i><span>还没有填写个人简介</span><i class="iconfont icon-baojiaquotation"></i>
 						</div>
-						<ul class="content-about-info-menu">
-							<li>个人简介</li>
-							<li>账户安全</li>
-							<li>空间容量</li>
+						<div id="content-about-info-no2" class="content-about-info-no2">
+							<p><span>登陆邮箱：1732859703@qq.com</span></p>
+							<p><span>注册日期：2018 年 11 月 05 日</span></p>
+							<p><span>上册登陆：新加坡 XX XX (查看详细)</span></p>
+						</div>
+						<div id="content-about-info-no3" class="content-about-info-no3">
+							<p><span>全部空间：1Tb</span><span>(扩充空间)</span></p>
+							<p><span>已用空间：1</span><span>Kb  468kb</span></p>
+							<p><span>剩余空间：1023GB1023MB1022KB556B</span></p>
+							<p><span>已用占比：0%</span></p>
+						</div>
+						<ul id="content-about-info-menu" class="content-about-info-menu">
+							<li id="menuLi1"  class="menuLi menuLis">个人简介</li>
+							<li id="menuLi2"  class="menuLi">账户安全</li>
+							<li id="menuLi3"  class="menuLi">空间容量</li>
 						</ul>
 					</div>
 				</div>
-	
-
 			</div>
 		</div>
 		<!-- ***************************************************弹窗 ***************************************************-->
-	
-
-
-
-
+		<div id="Modifying-data" class="Modifying-data">
+			<div class="popup-header"><h4>修改资料</h4><i id="iconChacha4" class="iconfont icon-chacha1"></i></div>
+			<input id="Modifying-data-input" type="text" maxlength="30" placeholder="请输入1-30位字符的昵称"  name="">
+			<textarea id="Modifying-data-textarea" rows="4" cols="18" maxlength="70" placeholder="请输入个人简介（可为空，不超过70个字符)" name=""></textarea>
+			<div id="Modifying-data-button1" class="Modifying-data-button1"><p>取消</p></div><div class="Modifying-data-button2"><p>确定</p></div>
+		</div>
+		<div id="Change-the-Avatar" class="Change-the-Avatar">
+			<h4>更换头像</h4>
+			<img src="../img/default-c.png">
+			<div id="Change-the-Avatar-button1" class="Change-the-Avatar-button1"><p>选择</p></div>
+			<div id="Change-the-Avatar-button2" class="Change-the-Avatar-button2"><p>取消</p></div>
+		</div>
+		<div id="Change-Password" class="Change-Password">
+			<div class="popup-header"><h4>修改密码</h4><i id="iconChacha5" class="iconfont icon-chacha1"></i></div>
+			<input id="Change-Password-input" type="text" maxlength="30" placeholder="请输入原登录密码"  name="">
+			<input id="Change-Password-input" type="text" maxlength="30" placeholder="请输入新的登录密码"  name="">
+			<input id="Change-Password-input" type="text" maxlength="30" placeholder="请重复输入新的登录密码"  name="">
+			<div id="Change-Password-button1" class="Change-Password-button1"><p>取消</p></div><div class="Change-Password-button2"><p>确定</p></div>
+		</div>
 
 
 
@@ -82,6 +105,6 @@
 
 
 	<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="../js/index.js"></script>
+	<script type="text/javascript" src="../js/personalData.js"></script>
 </body>
 </html>

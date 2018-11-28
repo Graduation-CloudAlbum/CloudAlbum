@@ -1,6 +1,6 @@
 
 .content-about{
-	margin-left: 30px;
+	margin-left: 25px;
 	margin-top: 30px;
 	width: 100%;
 }
@@ -173,25 +173,6 @@
 	display: none;
 	background: #fff;
 	border-radius: 0.5%;
-}
-.upload-photos-choose-header{
-	height: 50px;
-}
-.upload-photos-choose-header h4{
-	margin-top: 16px;
-	font-size: 20px;
-	padding-left: 15px;
-	line-height: 35px;
-	border-left: 3px solid blue;
-	width: 250px;
-}
-.upload-photos-choose-header i{
-	font-size: 16px;
-	position: absolute;
-	right: 15px;
-	top: 20px;
-	color: #909090;
-	cursor: pointer;
 }
 .upload-photos-choose .select-first{
 	margin-left: 20px;

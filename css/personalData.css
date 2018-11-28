@@ -53,18 +53,44 @@
 	margin-left: 270px;
 	position: relative;
 }
-.content-about .content-about-info .content-about-info-no{
+.content-about .content-about-info .content-about-info-no1{
 	text-align: center;
-	line-height: 50px;
-	padding:50px;
+	line-height: 150%;
+	padding:30px;
+	height: 270px;
+	padding-top: 110px;
+	display: block;
 }
-.content-about .content-about-info .content-about-info-no i{
+.content-about .content-about-info .content-about-info-no1 i{
 	font-size: 24px;
 	color: #ccc;
 }
-.content-about .content-about-info .content-about-info-no span{
+.content-about .content-about-info .content-about-info-no1 span{
 	color: #666;
 	font-size: 12px;
+	line-height: 1.5em;
+}
+.content-about .content-about-info .content-about-info-no2{
+	line-height: 40px;
+	padding:50px;
+	height: 270px;
+	padding-top: 80px;	
+	display: none;
+}
+.content-about .content-about-info .content-about-info-no2 span{
+	color: #666;
+	font-size: 16px;
+}
+.content-about .content-about-info .content-about-info-no3{
+	line-height: 40px;
+	padding:50px;
+	height: 270px;
+	padding-top: 60px;	
+	display: none;
+}
+.content-about .content-about-info .content-about-info-no3 span{
+	color: #666;
+	font-size: 16px;
 }
 .content-about .content-about-info .content-about-info-menu{
 	height: 66px;
@@ -76,7 +102,7 @@
 	position: absolute;
 	bottom: -1px;
 }
-.content-about .content-about-info .content-about-info-menu li{
+.content-about .content-about-info .content-about-info-menu .menuLi{
 	width: 79px;
 	float: left;
 	line-height: 65px;
@@ -88,6 +114,167 @@
 	margin-right: 26px;
 	cursor: pointer;
 }
+.content-about .content-about-info .content-about-info-menu .menuLis{
+	border-top: 2px solid #D84C31;
+	color: #000;
+}
 .content-about .content-about-info .content-about-info-menu li:hover{
 	border-top: 2px solid #EBA597;
+}
+.content-about .content-about-info .content-about-info-menu .menuLi2{
+	border-top: 2px solid #D84C31;
+	color: #000;
+	display: none;
+}
+
+/***************************************************弹窗1、**************************************************************/
+#Modifying-data{
+	position:absolute;
+	left:38%; 
+	top:30%;
+	z-index: 70;
+	width: 350px;
+	height: 290px;
+	bottom: 5%;
+	display: none;
+	background: #fff;
+	border-radius: 0.5%;
+}
+#Modifying-data-input{
+	margin-left: 20px;
+	height: 40px;
+	width: 310px;
+}
+#Modifying-data-textarea{
+	margin-left: 20px;
+	width: 310px;
+	height: 100px;
+	margin-top: 10px;
+}
+.Modifying-data-button1{
+	width: 80px;
+	background: #fff;
+	border-radius: 0.5%;
+	height: 35px;
+	margin-left: 150px;
+	border: 1px solid #DDD;
+	text-align: center;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.Modifying-data-button1 p{
+	line-height: 35px;
+}
+.Modifying-data-button2{
+	width: 80px;
+	background: #00A8D8;
+	border-radius: 0.5%;
+	height: 35px;
+	position: absolute;
+	right: 20px;
+	bottom: 24px;
+	text-align: center;
+	cursor: pointer;
+}
+.Modifying-data-button2 p{
+	color: #fff;
+	line-height: 35px;
+}
+/***************************************************弹窗2、**************************************************************/
+.Change-the-Avatar{
+	position:absolute;
+	left:41%; 
+	top:28%;
+	z-index: 70;
+	width: 270px;
+	height: 320px;
+	bottom: 5%;
+	display: none;
+	background: #fff;
+	border-radius: 0.5%;
+	text-align: center;
+	padding-top: 25px;
+}
+.Change-the-Avatar img{
+	margin-top: 20px;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+}
+.Change-the-Avatar .Change-the-Avatar-button1{
+	width: 80px;
+	background: #00A8D8;
+	border-radius: 0.5%;
+	height: 35px;
+	margin-left: 45px;
+	text-align: center;
+	margin-top: 25px;
+	cursor: pointer;
+}
+ .Change-the-Avatar .Change-the-Avatar-button1 p{
+	line-height: 35px;
+	color: #fff;
+}
+.Change-the-Avatar .Change-the-Avatar-button2{
+	width: 80px;
+	background: #fff;
+	border-radius: 0.5%;
+	height: 35px;
+	position: absolute;
+	right: 45px;
+	bottom: 25px;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid #DDD;
+}
+.Change-the-Avatar .Change-the-Avatar-button2 p{	
+	line-height: 35px;
+}
+/***************************************************弹窗3、**************************************************************/
+.Change-Password{
+	position:absolute;
+	left:38%; 
+	top:31%;
+	z-index: 70;
+	width: 360px;
+	height: 270px;
+	bottom: 5%;
+	display: none;
+	background: #fff;
+	border-radius: 0.5%;
+}
+#Change-Password-input{
+	margin-left: 20px;
+	height: 40px;
+	width: 310px;
+	margin-bottom: 10px;
+}
+.Change-Password-button1{
+	width: 80px;
+	background: #fff;
+	border-radius: 0.5%;
+	height: 35px;
+	margin-left: 150px;
+	border: 1px solid #DDD;
+	text-align: center;
+	margin-top: 4px;
+	cursor: pointer;
+}
+.Change-Password-button1 p{
+	line-height: 35px;
+}
+.Change-Password-button2{
+	width: 80px;
+	background: #00A8D8;
+	border-radius: 0.5%;
+	height: 35px;
+	position: absolute;
+	right: 30px;
+	bottom: 15px;
+	text-align: center;
+	cursor: pointer;
+}
+.Change-Password-button2 p{
+	color: #fff;
+	line-height: 35px;
 }
