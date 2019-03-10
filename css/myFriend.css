@@ -6,32 +6,310 @@
 	width: 100%;
 	background: #FAFAFA;
 }
-.content-about .friends-about-li{
-	width: 150px;
-	height: 150px;
-	border: 1px solid #EAEAEA;
-	margin-right: 25px;
-	margin-bottom: 25px;
-	float: left;
-	cursor: pointer;
-	position: relative;
+.content-about .friends-content{
+	width: 70%;
+	height: 85%;
 }
-.content-about .friends-about-li img{
-	width: 100%;
-	height: 100%;
-}
-.content-about .friends-about-li p{
-	position: absolute;
-	color: #fff;
-	font-size: 18px;
-	bottom:5px;
+.content-about .friends-content .friends-content-li{
+	width: 130px;
 	text-align: center;
-	width: 100%;
+	height: 130px;
+	float: left;
+}
+.content-about .friends-content .friends-content-li img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+.content-about .friends-content .friends-content-li p{
+	font-size: 16px;
+	line-height: 40px;
+
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 	cursor: pointer;
 }
-.content-about .friends-about-li:hover:p{
+
+.content-about .friends-header{
+	width: 300px;
+	height: 50px;
+	background: #FFDEAD;
+	position: absolute; 
+	right:0px;
+	top:180px;
+	font-size: 18px;
+	font-family:"华文宋体";
+	line-height: 50px;
+	text-align: center;
+}
+.content-about .content-about-menu{
+	width:310px;
+	height: 400px;
+	background:#FFF8DC;
+	border: 1px #EEEEEE solid;
+	overflow-y:auto;
+	right:-10px;
+	top:229px;
+	position: absolute; 
+}
+.content-about .content-about-menu .content-about-menu-li{
+	width: 100%;
+	height: 45px;
+	border: 1px #FAFAFA solid;
+	font-size: 18px;
+	font-family:"华文宋体";
+	padding-left: 8%;
+	padding-right: 8%;
+	line-height: 45px;
+
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	cursor: pointer;
+}
+.content-about .content-about-menu .content-about-menu-li:hover{
+	background: #FAFAFA;
+}
+/***********************************弹窗创建分组***************************************************/
+#Create-friends-group{
+	position:absolute;
+	left:40%; 
+	top:38%;
+	z-index: 70;
+	width: 350px;
+	height: 180px;
+	bottom: 5%;
+	display: none;
+	background: #fff;
+	border-radius: 0.5%;
+}
+ .select-first{
+	margin-left: 20px;
+	width: 260px;
+	height: 40px;
+	float: left;
+	padding-left: 10px;
+	border-left: 1px solid #DDD;
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+	cursor: pointer;
+	font-size: 18px;
+	color: #976666;
+	line-height: 40px;
+}
+ .select-right{
+	width: 50px;
+	height: 40px;
+	float: left;
+	padding-left: 16px;
+	line-height: 40px;
+	border-right: 1px solid #DDD;
+	border-top: 1px solid #DDD;
+	border-bottom: 1px solid #DDD;
+	cursor: pointer;
+}
+ .select-right span{
+	color: #E0E0E0;
+}
+.menu-group{
+	width: 310px;
+	position: absolute;
+	top:105px;
+	right: 20px;
+	z-index: 150;
+	display: none;
+}
+.menu-group .menu-group-li{
+	width: 100%;
+	padding-left: 10px;
+	height: 40px;
+	border: 1px #DDD solid;
+	font-size: 18px;
+	color: #787878;
+	line-height: 40px;
+	background: #fff;
+	cursor: pointer;
+}
+.menu-group .menu-group-li:hover{
+	background: #FAFAFA;
+}
+.Create-friends-button1{	
+	width: 80px;
+	background: #fff;
+	border-radius: 0.5%;
+	height: 35px;
+	margin-left: 150px;
+	border: 1px solid #DDD;
+	text-align: center;
+	cursor: pointer;
+	position: absolute;
+	right: 120px;
+	bottom: 24px;
+}
+.Create-friends-button1 p{
+	line-height: 35px;
+}
+.Create-friends-button2{
+	width: 80px;
+	background: #00A8D8;
+	border-radius: 0.5%;
+	height: 35px;
+	position: absolute;
+	right: 20px;
+	bottom: 24px;
+	text-align: center;
+	cursor: pointer;
+}
+.Create-friends-button2 p{
+	color: #fff;
+	line-height: 35px;
+}
+/***********************************弹窗添加好友***************************************************/
+#create-friends{
+	display: none;
+}
+.create-friends{
+	position:absolute;
+	left:2%; 
+	top:5%;
+	z-index: 50;
+	width: 96%;
+	height: 92%;
+	bottom: 5%;
+}
+.create-friends-pop{
+	width: 100%;
+	height: 100%;
+	left: 5%;
+	top:5%; 
+}
+.create-friends-pop-header{
+	height: 60px;
+	width: 100%;
+	background: #fff;
+	border:1px solid #EEE;
+}
+.create-friends-pop-header span{
+	font-size: 24px;
+	line-height: 60px;
+	margin-left: 10px;
+}
+.create-friends-pop-header i{
+	font-size: 24px;
+	font-weight: normal;
+	position: absolute;
+	right: 15px;
+	line-height: 60px;
+	color: #CCCCCC;
+	cursor: pointer;
+}
+.create-friends-pop-content{
+	background: #F5F5F5;
+	width: 100%;
+	height: 90%;
+	padding: 20px;
+	position: relative;
+}
+#Create-friends-input{
+	height: 40px;
+	width: 310px;
+	z-index: 150;
+} 
+.search-i{
+	width:40px;
+	height: 40px;
+	position: absolute;
+    top: 20px;
+    left: 290px;
+    text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+	z-index: 200;
+}
+#search-content{
+	display: none;
 	
+}
+.search-content{
+	width:100%;
+	height: 82%;
+	overflow-y: auto;
+    margin-top: 35px;
+}
+.search-content .search-content-li{
+	width: 225px;
+    height: 136px;
+    padding: 20px;
+	position: relative;
+	float: left;
+	margin-right: 76px;
+	border:1px #000 radius;
+}
+.search-content .search-content-li img{
+    width: 80px;
+    height: 80px;
+	border-radius: 50%;
+
+}
+.search-content .search-content-li .search-content-name{
+	width: 80px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	position: absolute;
+	top: 22px;
+	left:125px;
+	font-size: 20px;
+}
+.search-content .search-content-li .search-content-name2{
+	width: 80px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	position: absolute;
+	top: 50px;
+	left:125px;
+	color: #9999A6;
+}
+.search-content .search-content-li .create-jia{
+	position: absolute;
+}
+
+/***********************************弹窗添加好友验证***************************************************/
+
+#friendVerification{
+	display: none;
+	position:absolute;
+	left:40%; 
+	top:38%;
+	z-index: 200;
+	width: 350px;
+	height: 240px;
+	bottom: 5%;
+	background: #fff;
+	border-radius: 0.5%;
+}
+#Verification-group{
+	display: none;
+}
+.Verification-text{
+	width: 260px;
+	margin-left: 20px;
+}
+.Verification-text .Verification-title{
+	font-size: 16px;
+    height: 30px;
+}
+.Verification-text .search-text{
+	width: 310px;
+}
+
+.Verification-title2{
+	margin-left: 20px;
+	font-size: 16px;
+    height: 30px;
+}
+.friendVerification-group{
+	top: 136px;
 }

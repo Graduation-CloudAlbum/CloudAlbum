@@ -142,20 +142,31 @@
 				</div>
 			</div>
 		</div>
-		<!-- ***************************************************弹窗 ***************************************************-->
+		<!-- ***************************************************弹窗上传照片 ***************************************************-->
 		<div id="upload-photos-choose" class="upload-photos-choose">
 			<div class="popup-header"><h4>选择相册</h4><i id="iconChacha2" class="iconfont icon-chacha1"></i></div>
-			<div class="select-first"><p>心情</p></div>
-			<div class="select-right"><span><i class="iconfont icon-iconfontjiantou jiantou"></i></span></div>
+			<div id="upload-photos-left" class="select-first">我的相册</div>
+			<div id="upload-photos-right" class="select-right"><span><i class="iconfont icon-iconfontjiantou jiantou"></i></span></div>
+			<ul id="upload-photos-group" class="menu-group">
+				<li class="menu-group-li">陌生人</li>
+				<li class="menu-group-li">家人</li>
+				<li class="menu-group-li">同事</li>
+			</ul>
 			<div id="select-button" class="select-button"><p>下一步</p></div>
 		</div>
 		<!-- ***************************************************弹窗 ***************************************************-->
 		<div id="Create-Album">
 			<div class="popup-header"><h4>创建相册</h4><i id="iconChacha3" class="iconfont icon-chacha1"></i></div>
 			<input id="Create-Album-input" type="text" placeholder="请输入1-30位字符名称的相册"  name="">
+			<div class="create-radio">
+				<input class="create-radio-item" type="radio" name="radio" value="普通"checked><label>普通</label>
+				<input class="create-radio-item" type="radio" name="radio" value="家人"><label>家人</label>
+				<input class="create-radio-item" type="radio" name="radio" value="旅游"><label>旅游</label>
+				<input class="create-radio-item" type="radio" name="radio" value="情侣"><label>情侣</label>
+			</div>
 			<div class="Create-Album-button1" id="Create-Album-button1"><p>取消</p></div><div class="Create-Album-button2"><p>确定</p></div>
 		</div>
-
+ 
 
 
 

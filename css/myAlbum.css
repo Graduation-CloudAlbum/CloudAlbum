@@ -324,12 +324,11 @@
 	border-left: 1px solid #DDD;
 	border-top: 1px solid #DDD;
 	border-bottom: 1px solid #DDD;
-}
-.upload-photos-choose .select-first p{
 	font-size: 18px;
 	color: #976666;
 	line-height: 40px;
 }
+
 .upload-photos-choose .select-right{
 	width: 50px;
 	height: 40px;
@@ -342,6 +341,31 @@
 }
 .upload-photos-choose .select-right span{
 	color: #E0E0E0;
+}
+#upload-photos-group{
+	display: none;
+}
+.menu-group{
+	width: 310px;
+	position: absolute;
+	top:105px;
+	right: 20px;
+	z-index: 150;
+	display: none;
+}
+.menu-group .menu-group-li{
+	width: 100%;
+	padding-left: 10px;
+	height: 40px;
+	border: 1px #DDD solid;
+	font-size: 18px;
+	color: #787878;
+	line-height: 40px;
+	background: #fff;
+	cursor: pointer;
+}
+.menu-group .menu-group-li:hover{
+	background: #FAFAFA;
 }
 .upload-photos-choose .select-button{
 	background: #00A8D8;
@@ -362,21 +386,34 @@
 
 /***************************************************弹窗3、**************************************************************/
 #Create-Album{
-	position:absolute;
-	left:40%; 
-	top:38%;
-	z-index: 70;
-	width: 350px;
-	height: 180px;
-	bottom: 5%;
-	display: none;
-	background: #fff;
-	border-radius: 0.5%;
+	position: absolute;
+    left: 38%;
+    top: 31%;
+    z-index: 70;
+    width: 350px;
+    height: 300px;
+    bottom: 5%;
+    display: none;
+    background: #fff;
+    border-radius: 0.5%;
 }
 #Create-Album-input{
 	margin-left: 20px;
 	height: 40px;
 	width: 310px;
+}
+.create-radio{
+	width: 310px;
+    height: 40px;
+    border: 1px solid #000;
+    margin-left: 20px;
+    margin-top: 10px;
+	line-height: 40px;
+	font-size: 15px;
+}
+.create-radio label{
+	margin-right: 7px;
+	font-weight: normal;
 }
 .Create-Album-button1{
 	width: 80px;
