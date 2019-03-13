@@ -23,12 +23,37 @@ ChangetheAvatar.onclick=function(){
 	document.getElementById('Change-the-Avatar').style.display="block";
 	document.getElementById('popLayer2').style.display="block";
 }
+var image = '';
+function selectImage(file) {
+	if (!file.files || !file.files[0]) {
+		return;
+	}
+	var reader = new FileReader();
+	reader.onload = function (evt) {
+		document.getElementById('image').src = evt.target.result;
+		image = evt.target.result;
+	}
+	reader.readAsDataURL(file.files[0]);
+}
+var image2 = '';
+function selectImage2(file) {
+	if (!file.files || !file.files[0]) {
+		return;
+	}
+	var reader = new FileReader();
+	reader.onload = function (evt) {
+		document.getElementById('image2').src = evt.target.result;
+		image2 = evt.target.result;
+	}
+	reader.readAsDataURL(file.files[0]);
+}
 //关闭更换头像
 var ChangetheAvatarButton2 = document.getElementById('Change-the-Avatar-button2');
 ChangetheAvatarButton2.onclick=function(){
 	document.getElementById('popLayer2').style.display="none";
 	document.getElementById('Change-the-Avatar').style.display="none";
 }
+
 //修改密码
 var ChangePassword = document.getElementById('ChangePassword');//
 ChangePassword.onclick=function(){
@@ -80,4 +105,4 @@ menuLi3.onclick=function() {
 	contentAboutInfoNo1.style.display="none";
 	contentAboutInfoNo2.style.display="none";
 	contentAboutInfoNo3.style.display="block";
-}
+} 
