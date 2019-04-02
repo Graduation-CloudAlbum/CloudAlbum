@@ -50,3 +50,9 @@ send.onclick = function(){
 // 		//aL[0].style.borderBottom="2px solid #D84C31";
 // 	}
 // }	color: #9999A6;
+
+$(function(){  
+    $(".acceptF").click(function(){  
+        $("#accept-friends").style.display="block"
+    });   
+});

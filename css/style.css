@@ -198,7 +198,43 @@ html,body{
 	display: block;
 }
 */
+#admin-button{
+	display: none
+}
+.admin-button{
+	position: absolute;
+	right: 10px;
+	line-height: 44px;
+}
+.admin-button-li{
+	height: 30px;
+	background: #D84C31;
+	color: #fff;
+}
+.album-sort2{
+	width: 110px;
+    margin-top: 6px;
+    position: absolute;
+	z-index:100;
+	display: none;
+	right:86px;
+}
+.album-sort2 .album-sort-li{
+	border: 1px solid #CCCCCC;
+	height: 40px;
+	padding-left: 10px;
+	line-height: 40px;
+	background: #fff;
+	color: #9999B1;
+	cursor: pointer;
 
+}
+.uploadPhoto7:hover .album-sort2{
+	display: block;
+}
+.album-sort2 .album-sort-li:hover{
+	color: #000;
+}
 /***************************************************footer、**************************************************************/
 .content-button{
 	width: 100%;
@@ -332,6 +368,8 @@ html,body{
     line-height: 40px;
 /*    width: 300px;*/
     background: #FFF8DC;
+    min-width: 160px;
+
 }
 .Verification-table td{
 	border:1px solid #EBEBEB;
@@ -351,4 +389,7 @@ html,body{
 .delete{
 	background: #D84C31;
 	color: #fff
+}
+#accept-friends{
+	display: none;
 }
