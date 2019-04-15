@@ -118,8 +118,6 @@
 
 
 
-
-
 .friend-group{
 	width: 170px;
     margin-top: 6px;
@@ -236,7 +234,12 @@
 	display: none;
 }
 
-
+#move-friends{
+	display: none;
+}
+#delete-friends-pop{
+	display: none;
+}
 
 
 

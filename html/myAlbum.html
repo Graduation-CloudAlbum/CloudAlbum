@@ -243,17 +243,17 @@
 						<tr>
 							<td>江川</td>
 							<td>我是江川</td>
-							<td><button class="btn delete acceptF">接受</button>   <button class="btn delete">拒绝</button></td>
+							<td><button class="btn delete acceptF" onclick="acceptfriendsbutton()">接受</button>   <button class="btn delete">拒绝</button></td>
 						</tr>
 						<tr>
 							<td>江川</td>
 							<td>我是江川,你最近好嘛，的手机号电磁阀时间不长是打发时间阿KSDFSJH SDFS jd SDJjsd 受到</td>
-							<td><button class="btn delete acceptF">接受</button>   <button class="btn delete">拒绝</button></td>
+							<td><button class="btn delete acceptF" onclick="acceptfriendsbutton()">接受</button>   <button class="btn delete">拒绝</button></td>
 						</tr>
 						<tr>
 							<td>江川</td>
 							<td>我是江川,你最近好嘛，的手机号电磁阀时间不长是打发时间阿KSDFSJH SDFS jd SDJjsd 受到</td>
-							<td><button class="btn delete acceptF">接受</button>   <button class="btn delete">拒绝</button></td>
+							<td><button class="btn delete acceptF" onclick="acceptfriendsbutton()">接受</button>   <button class="btn delete">拒绝</button></td>
 						</tr>
 					
 						
@@ -264,16 +264,16 @@
 			</div>
 		</div>
 <!-- ***************************************************添加好友-》选择好友分组 ***************************************************-->
-		<div id="accept-friends" class="upload-photos-choose">
-			<div class="popup-header"><h4>选择分组</h4><i id="iconChacha8" class="iconfont icon-chacha1"></i></div>
-			<div id="accept-friends-left" class="select-first">我的好友分组</div>
-			<div id="accept-friends-right" class="select-right"><span><i class="iconfont icon-iconfontjiantou jiantou"></i></span></div>
-			<ul id="accept-friends-group" class="menu-group">
-				<li class="menu-group-li">陌生人</li>
-				<li class="menu-group-li">家人</li>
-				<li class="menu-group-li">同事</li>
+		<div id="accept-friends" class="accept-friends">
+			<div class="popup-header"><h4>陌生人</h4><i id="iconChacha8" class="iconfont icon-chacha1"></i></div>
+			<div id="accept-friends-left" class="select-first1">我的好友分组</div>
+			<div id="accept-friends-right" class="select-right1"><span><i class="iconfont icon-iconfontjiantou jiantou"></i></span></div>
+			<ul id="accept-friends-group" class="menu-group1">
+				<li class="menu-group-li1">陌生人</li>
+				<li class="menu-group-li1">家人</li> 
+				<li class="menu-group-li1">同事</li>
 			</ul>
-			<div id="accept-friends-select-button" class="select-button"><p>下一步</p></div>
+			<div id="accept-friends-button1" class="default-button1"><p>取消</p></div><div class="default-button2"><p>确定</p></div>
 		</div>
 		<!-- ***************************************************确认移动分组***************************************************-->
 		<div id="choose-group" >
@@ -287,8 +287,29 @@
 			<div class="choose-group-ok">将照片移至回收站</span></div>
 			<div class="Create-Album-button1" id="delete-group-button1"><p>取消</p></div><div class="Create-Album-button2"><p>确定</p></div>
 		</div>
-
-
+		<!-- ***************************************************相册信息***************************************************-->
+		<div id="mod-album" class="mod-album bdR3" style="margin-top: -150px; opacity: 1;">
+			<div class="cover">
+				<a class="cover-link mod-click">
+					<img class="pic" src="../img/Album-cover1.jpg">
+					<span class="num-bg op30 bdRc"></span>
+					<span class="num-bg-txt f16">0</span>
+					<span class="cover-bg op60"></span>
+					<span class="cover-bg-txt f16">更换封面</span>
+				</a>
+			</div>
+			<div class="info">
+				<div class="text">
+					<p class="title">gjhj</p>
+					<p class="intro clrB6 lh24">暂无相册简介</p>
+					<p class="time">2019-03-08 12:00:00</p>
+				</div>
+				<div class="fns clearFix">				 
+					<a id="close-mod" class="btn-cancel icoMod fR" title="关闭" ><i class="icon iconfont icon-chacha"></i></a>
+					<a class="btn-sure icoMod fR mod-click"  title="修改相册信息"><i class="icon iconfont icon-bianji"></i></a>
+				</div>
+			</div>
+		</div>
 
 
 

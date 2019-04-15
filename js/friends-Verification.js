@@ -2,7 +2,7 @@ var friendsVerification=document.getElementById('friends-Verification');
 //点击消息
 friendsVerification.onclick = function(){
 	document.getElementById('Verification').style.display="block";
-	document.getElementById('popLayer2').style.display="block";
+	document.getElementById('popLayer').style.display="block";
 
 }
 
@@ -12,7 +12,7 @@ friendsVerification.onclick = function(){
 var iconChacha10=document.getElementById('iconChacha10');
 iconChacha10.onclick = function(){
 	document.getElementById('Verification').style.display="none";
-	document.getElementById('popLayer2').style.display="none";
+	document.getElementById('popLayer').style.display="none";
 
 }
 
@@ -51,8 +51,42 @@ send.onclick = function(){
 // 	}
 // }	color: #9999A6;
 
-$(function(){  
-    $(".acceptF").click(function(){  
-        $("#accept-friends").style.display="block"
-    });   
-});
+//点击接受
+var acceptFriends = document.getElementById('accept-friends');
+var acceptFriendsButton1 = document.getElementById('accept-friends-button1');
+var iconChacha8 = document.getElementById('iconChacha8');
+
+var acceptFriendsGroup = document.getElementById('accept-friends-group');
+var acceptFriendsGroupLi = acceptFriendsGroup.getElementsByTagName('li');
+var acceptFriendsLeft = document.getElementById('accept-friends-left');
+var acceptFriendsRight = document.getElementById('accept-friends-right');
+
+function acceptfriendsbutton(){
+	acceptFriends.style.display="block";
+	document.getElementById('popLayer2').style.display="block";
+}
+acceptFriendsButton1.onclick = function(){
+	acceptFriends.style.display="none";
+	document.getElementById('popLayer2').style.display="none";
+}
+iconChacha8.onclick = function(){
+	acceptFriends.style.display="none";
+	document.getElementById('popLayer2').style.display="none";
+}
+
+var acceptLi="";
+acceptFriendsRight.onclick = function(){
+	acceptFriendsGroup.style.display="block"
+}
+for(var i=0;i<acceptFriendsGroupLi.length;i++){
+	acceptFriendsGroupLi[i].index = i;
+	acceptFriendsGroupLi[i].onclick = function(){
+		str = (function(i){
+			acceptLi=acceptFriendsGroupLi[i].innerHTML;
+			acceptFriendsLeft.innerHTML=acceptLi;
+			return acceptFriendsLeft.innerHTML;
+		})(this.index);
+		acceptFriendsGroup.style.display="none"
+		acceptFriendsLeft.innerHTML=str
+	}
+}

@@ -296,3 +296,17 @@ deleteGroupButton1.onclick = function(){
 	document.getElementById('popLayer2').style.display="none";
 	document.getElementById('delete-group').style.display="none";
 }
+
+
+//编辑相册
+var modAlbum = document.getElementById('mod-album');
+var uploadPhoto4 = document.getElementById('uploadPhoto4');
+var closeMod = document.getElementById('close-mod');
+uploadPhoto4.onclick = function(){
+	modAlbum.style.display="block";
+	popLayer2.style.display="block";
+}
+closeMod.onclick = function(){
+	modAlbum.style.display="none";
+	popLayer2.style.display="none";
+}
