@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css"/>
     <link rel="stylesheet" href="../css/iconfont.css"/>
     <link rel="stylesheet" type="text/css" href="../css/recycleBin.css"/>
+
+
 </head>
 <body>
 	<div class="wrapper">
@@ -76,9 +78,45 @@
 
 						</tbody>
 					</table>
+
+
+
+
+
+ <div>
+        <canvas id="myCanvas" width="1000" height="500" >您的浏览器不支持Canvas</canvas>
+        <img id="img" src="../img/3.jpg" style="display: none">
+    </div>
+    <script>
+        //新建img对象 
+        var img = new Image();
+
+        //为新建的img赋值src
+        var mImg = document.getElementById("img");
+        img.src = mImg.getAttribute('src');
+
+        // img加载完成
+        img.onload=function(){
+           //准备canvas
+           var canvas=document.getElementById("myCanvas");
+           var context=canvas.getContext("2d");
+           // 绘制图片
+           context.drawImage(img,0,0);
+           // 绘制水印
+           context.font="26px microsoft yahei";
+           context.fillStyle = "rgba(255,255,255,0.5)";
+           context.fillText("1024",100,100);
+        }
+    </script>
+
+
+
+
+
+
 					
 				</div>
-
+ 
 			</div>
 		</div>
 		<!-- ***************************************************弹窗 ***************************************************-->
@@ -218,6 +256,8 @@
 
 		<div id="popLayer" class="popLayer"></div>
 		<div id="popLayer2" class="popLayer2"></div>
+
+
 
 
 

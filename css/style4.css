@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+body {
+  width: 1000px;
+  margin: 30px auto 0;
+}
+.jcrop-holder {
+  margin-top: 10px;
+}
+/*#jcrop_target {
+  display: none;
+}*/
+#container {
+  margin-top: 10px;
+}
+#filter {
+  margin-top: 10px;
+  display: none;
+}
+.checkbox {
+  display: inline-block;
+  width: 15.5%;
+  line-height: 28px;
+}
+input[type='range'] {
+  vertical-align: middle;
+}
+#gradient {
+  margin: 10px 0;
+  display: none;
+}
+.midpoint {
+  margin: 10px 0 0;
+  display: none;
+}

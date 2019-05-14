@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>滤镜demo</title>
+  <link rel="stylesheet" type="text/css" href="css/style4.css">
+  <link rel="stylesheet" type="text/css" href="css/cropper.css">
+</head>
+<body>
+  选择图片：<input type="file" id="select" name="">
+  <div id="filter">
+    滤镜：<i>(暂仅RGBA滤镜添加了参数调节)</i><br />
+    <span class="checkbox"><input type="checkbox" class="filter" value="Blur" id="Blur"><label for="Blur">Blur</label></span>
+    <span class="checkbox"><input type="checkbox" class="filter" value="Brighten" id="Brighten"><label for="Brighten">Brighten</label></span>
+    <span class="checkbox"><input type="checkbox" class="filter" value="Emboss" id="Emboss"><label for="Emboss">Emboss</label></span>
+    <span class="checkbox"><input type="checkbox" class="filter" value="Grayscale" id="Grayscale"><label for="Grayscale">Grayscale</label></span>
+    <span class="checkbox"><input type="checkbox" class="filter" value="Enhance" id="Enhance"><label for="Enhance">Enhance</label></span>
+    <span class="checkbox"><input type="checkbox" class="filter" value="HSL" id="HSL"><label for="HSL">HSL</label></span>
+    <span class="checkbox"><input type="checkbox" class="filter" value="HSV" id="HSV"><label for="HSV">HSV</label></span>
+    <span class="checkbox"><input type="checkbox" class="filter" value="Invert" id="Invert"><label for="Invert">Invert</label></span>
+    <span class="checkbox"><input type="checkbox" class="filter" value="Mask" id="Mask"><label for="Mask">Mask</label></span>
+    <span class="checkbox"><input type="checkbox" class="filter" value="Noise" id="Noise"><label for="Noise">Noise</label></span>
+    <span class="checkbox"><input type="checkbox" class="filter" value="Pixelate" id="Pixelate"><label for="Pixelate">Pixelate</label></span>
+    <span class="checkbox"><input type="checkbox" class="filter" value="Posterize" id="Posterize"><label for="Posterize">Posterize</label></span>
+    <span class="checkbox"><input type="checkbox" class="filter" value="RGB" id="RGB"><label for="RGB">RGB</label></span>
+    <span class="checkbox"><input type="checkbox" class="filter" value="RGBA" id="RGBA"><label for="RGBA">RGBA</label></span>
+    <span class="checkbox"><input type="checkbox" class="filter" value="Sepia" id="Sepia"><label for="Sepia">Sepia</label></span>
+    <span class="checkbox"><input type="checkbox" class="filter" value="Solarize" id="Solarize"><label for="Solarize">Solarize</label></span>
+    <span class="checkbox"><input type="checkbox" class="filter" value="Threshold" id="Threshold"><label for="Threshold">Threshold</label></span>
+  </div>
+  <ul id="options"></ul>
+  <div id="gradient">
+    选择渐变：
+    <select class="gradient">
+      <option value="none">none</option>
+      <option value="radial">radial</option>
+      <option value="rect">rect</option>
+      <option value="diamond">diamond</option>
+    </select><br/>
+    <input type="range" class="midpoint" min="0" max="1" step="0.01" value="0.5">
+  </div>
+  <img src="" alt="" id="jcrop_target">
+  <div id="container"></div>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/cropper.js"></script>
+  <script type="text/javascript" src="js/konva.min.js"></script>
+  <script type="text/javascript" src="js/gradient.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

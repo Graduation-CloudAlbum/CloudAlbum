@@ -179,7 +179,6 @@ if((D + '').length == 1){
 var curDay = Y + '-' + M + '-' + D;
 var curDay2 = Y + '-' + M2 + '-' + D;
 var hou = H + ':' + S;
-console.log(curDay2)
 $('#logOutTime').val(curDay + 'T' + hou)
 $("#logOutTime").attr("min",curDay + 'T' + hou)
 $("#logOutTime").attr("max",curDay2 + 'T' + hou)
@@ -310,3 +309,109 @@ closeMod.onclick = function(){
 	modAlbum.style.display="none";
 	popLayer2.style.display="none";
 }
+
+
+
+// //删除相册
+//             var deleteAlbum = document.getElementById('delete-album');
+//             //var delAlbum2 = document.getElementById('del-album2');
+//             var deleteAlbumButton1 = document.getElementById('delete-album-button1');
+//             var iconChacha12 = document.getElementById('iconChacha12');
+//             function delAlbum2(){
+//             	deleteAlbum.style.display = "block";
+//             	popLayer2.style.display="block";
+//             }
+//             deleteAlbumButton1.onclick = function(){
+//             	deleteAlbum.style.display="none";
+//             	popLayer2.style.display="none";
+//             }
+//             iconChacha12.onclick = function(){
+//             	deleteAlbum.style.display="none";
+//             	popLayer2.style.display="none";
+//             }
+
+
+// <script>
+//$(".lvjing").click(function(){
+	//alert("Asd")
+// 	$(function(){
+// $(".a1").each(function (index){
+// $(this).click(function () {
+// alert(index)
+// })
+// })
+// })
+
+// var data=[
+// 			{img:"../img/3.jpg"},
+// 			{img:"../img/Album-cover1.jpg"},
+// 			{img:"../img/gallery/DSC_0019-660x441.jpg"}
+// ]
+	//var inputField = document.querySelector(".demo__input-img")
+// var inputField = document.querySelector("#select")
+// 	function pickSample(img) {
+// 	//  updateImages(img.src)
+// 	  inputField.value = img.getAttribute("src")
+// 	}
+
+// //var iPhoto="";
+// 	//function pickSample(iPhoto) {
+// 	//   updateImages(data[iPhoto].img)
+// 	//   inputField.value = data[iPhoto].img
+// 	// }
+// 	// function updateImages(src) {
+// 	//   var imgs = document.querySelectorAll(".demo__item img")
+// 	//   for (var i = 0; i < imgs.length; i++) imgs[i].src = src
+// 	// }
+// document.addEventListener("click", function(event) {
+	
+// 	//alert(event.target.className)
+// 	if ( /demo__option-img/.test(event.target.className) ) {
+// 		document.getElementById("filter").style.display="block"
+// 		//iPhoto=Array.prototype.indexOf.call( document.querySelectorAll( '.demo__option-img' ), event.target );
+// 		//alert(iPhoto)
+// 		pickSample( iPhoto );
+// 	}
+  
+// }, false)
+							
+	// document.addEventListener("click", function(event) {
+	// 	var i=Array.prototype.indexOf.call( document.querySelectorAll( '.demo__option-img' ), event.target );
+	// 	//alert(event.target.className)
+	// 	if ( /demo__option-img/.test(event.target.className) ) {
+	// 		alert( i );
+	// 	}
+			
+		
+		//alert(this.nextSbiling.target.className)
+		// if(/demo__option-img/.test(event.nextSbiling.children[0].className)){
+		// 	alert( event.nextSbiling.children[0]);])
+
+		// 	pickSample(event.nextSbiling.children[0		// }
+		//alert(event.currentTarget.nextSbiling.firstElementChild.className)
+		 // if (/demo__option-img/.test(event.currentTarget.nextSbiling.firstElementChild.className)) 
+	  	
+	  // 	pickSample(event.currentTarget.nextSbiling.firstElementChild)
+		
+	  // if (/demo__option-img1/.test(event.target.className)) 
+	  	
+	  // 	pickSample(event.target)
+	  
+	//}, false)
+
+	// inputField.addEventListener("input", function() {
+	//   updateImages(this.value)
+	// }, false)
+
+	// inputField.addEventListener("focus", function() {
+	//   this.select()
+	// }, false)
+
+	//pickSample(document.querySelector(".demo__option-img1"))
+
+
+
+//})
+
+
+// </script>
